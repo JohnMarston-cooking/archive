@@ -4,7 +4,7 @@ mkfs.ext4 /dev/sda2
 mount /dev/sda2 /mnt
 mount --mkdir /dev/sda1 /mnt/boot
 cd /mnt
-wget http://mirror.xeonbd.com/archlinux/iso/2025.06.01/archlinux-bootstrap-x86_64.tar.zst
+wget http://mirror.xeonbd.com/archlinux/iso/latest/archlinux-bootstrap-x86_64.tar.zst
 tar xpvf archlinux-bootstrap-x86_64.tar.zst
 mv /mnt/root.x86_64/* /mnt
 cp --dereference /etc/resolv.conf /mnt/etc/
